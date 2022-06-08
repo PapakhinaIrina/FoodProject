@@ -12,6 +12,7 @@ const postData = async (url, data) => {
 
 async function getResource(url) {
   let res = await fetch(url);
+  console.log(url);
 
   if (!res.ok) {
       throw new Error(`Could not fetch ${url}, status: ${res.status}`);
